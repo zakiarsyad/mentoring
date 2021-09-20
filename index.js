@@ -14,5 +14,8 @@ const response = [
     {
         'nama-kelas': 'Javascript Intermediate',
         'harga': 100000
+    },
+    {
+        random: 'asdajsdlkajdlkajskdljalkdjalksdjla'
     }
 ]
