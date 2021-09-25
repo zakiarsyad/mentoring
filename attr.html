@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=utf-8 />
+</head>
+
+<body>
+    <p>
+        <a id="skilvul-link" type="text/html" hreflang="en-us" rel="nofollow" target="_self"
+            href="https://www.skilvul.com/">Skilvul</a>
+    </p>
+    <button onclick="getAttributes()">Click here to get attributes value</button>
+
+    <script>
+        const getAttributes = () => {
+            // const id = document.getElementById("skilvul-link").getAttribute("id")
+            // const type = document.getElementById("skilvul-link").getAttribute("type")
+            // const hreflang = document.getElementById("skilvul-link").getAttribute("hreflang")
+            // const rel = document.getElementById("skilvul-link").getAttribute("rel")
+            // const target = document.getElementById("skilvul-link").getAttribute("target")
+            // const href = document.getElementById("skilvul-link").getAttribute("href")
+
+            // alert(id)
+            // alert(type)
+            // alert(hreflang)
+            // alert(rel)
+            // alert(target)
+            // alert(href)
+
+            const attrs = document.getElementById("skilvul-link").attributes
+
+            for (let i = 0; i < attrs.length; i++) {
+                const nodeName = attrs[i].nodeName
+                const value = attrs[i].value
+
+                alert(`Attributes ${nodeName} has value ${nodeValue}`)
+            }
+        }
+    </script>
+</body>
+
+</html>
